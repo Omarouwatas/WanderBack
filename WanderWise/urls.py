@@ -21,8 +21,8 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('WanderBack.urls')),
+path('admin/', admin.site.urls),
+path('api/', include('wiseback.urls')),  # Make sure this line is included
 ]
-if settings.DEBUG:  # Serve media files only in development
+if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

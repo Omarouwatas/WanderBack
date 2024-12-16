@@ -25,10 +25,8 @@ SECRET_KEY = 'django-insecure-ka(2#*p&nw_8+7egv*=iigjc)dng=#h=d9j&-i2!&5$4m1t@98
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'WanderBack',
+    'wiseback',
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
